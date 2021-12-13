@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Product>Digicore.SalvageModifier</Product>
-    <PackageId>Digicore.SalvageModifier</PackageId>
+    <Product>Digicore.Unturned.Plugins.SalvageModifier</Product>
+    <PackageId>Digicore.Unturned.Plugins.SalvageModifier</PackageId>
     <PackageDescription>An OpenMod plugin that facilitates the modification of a player's "salvage time" on an Unturned server.</PackageDescription>
     <PackageAuthor>Digicore Labs</PackageAuthor>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

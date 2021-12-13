@@ -10,7 +10,7 @@ using OpenMod.Unturned.Plugins;
 using OpenMod.Unturned.Players.Connections.Events;
 using Microsoft.Extensions.DependencyInjection;
 
-[assembly: PluginMetadata("Digicore.SalvageModifier", DisplayName = "Digicore.SalvageModifier", Author = "Digicore Labs", Website = "digicorelabs.com")]
+[assembly: PluginMetadata("Digicore.Unturned.Plugins.SalvageModifier", DisplayName = "Digicore.Unturned.Plugins.SalvageModifier", Author = "Digicore Labs", Website = "digicorelabs.com")]
 namespace SalvageModifier
 {
     public class SalvageModifierPlugin : OpenModUnturnedPlugin
@@ -27,7 +27,7 @@ namespace SalvageModifier
 
         protected override UniTask OnLoadAsync()
         {
-            m_Logger.LogInformation("[Digicore.SalvageModifier] MESSAGE: SalvageModifier has loaded.");
+            m_Logger.LogInformation("[Digicore.Unturned.Plugins.SalvageModifier] MESSAGE: SalvageModifier has loaded.");
 
             return UniTask.CompletedTask;
         }
@@ -64,8 +64,8 @@ namespace SalvageModifier
 
                 return salvageTimeFromConfig;
             } catch (System.Exception) {
-                m_Logger.LogInformation("[Digicore.SalvageModifier] ERROR: Unable to fetch `salvage_time` from `config.yaml` as a number.");
-                m_Logger.LogInformation($"[Digicore.SalvageModifier] MESSAGE: Reverting to default salvage time of {(int)Math.Ceiling(defaultSalvageTime)} seconds.");
+                m_Logger.LogInformation("[Digicore.Unturned.Plugins.SalvageModifier] ERROR: Unable to fetch `salvage_time` from `config.yaml` as a number.");
+                m_Logger.LogInformation($"[Digicore.Unturned.Plugins.SalvageModifier] MESSAGE: Reverting to default salvage time of {(int)Math.Ceiling(defaultSalvageTime)} seconds.");
 
                 return defaultSalvageTime;
             }
